@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYTSearch</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <header>
+        <div class="jumbotron">
+            <h1 class="display-4">NEW YORK TIMES SEARCH</h1>
+        </div>
+    </header>
+
+    <!-- Search Panel -->
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="container">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Search Term</label>
+                    <input type="text" class="form-control clear" id="search" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+            
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Number of Records to Retrieve:</label>
+                    <select class="form-control" id="numResults">
+                        <option value="10">10</option>
+                        <option value="5">5</option>
+                        <option value="1">1</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="StartYear">Start Year (Optional):</label>
+                    <input type="text" class="form-control" id="startYear" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+                <div class="form-group">
+                    <label for="EndYear">End Year (Optional):</label>
+                    <input type="text" class="form-control" id="endYear" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
+                </div>
+
+                <button class="btn btn-default" type="submit" id="searchBtn">Search</button>
+                <button class="btn btn-default" type="button" value="reset" id="clear">Clear</button>
+            
+            </div>
+        </div>
+    </div>
+    <!-- Result Panel -->
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="panel panel-default">
+                    <h3 class="panel-title">Top Articles</h3>
+                </div>
+        
+                <div class="panel-body" id="wellSection">
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer>@Copyrights</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="./script.js"></script>      
+
+    
+</body>
+</html>

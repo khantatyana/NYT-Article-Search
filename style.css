@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    
+}
+.jumbotron {
+    background-color: rgb(18, 18, 88);
+    color: white;
+}
+
+footer {
+    text-align: center;
+    background-color: blue;
+    color: cornsilk;
+    position: relative;
+}
+.well {
+    border: 1px solid;
+    padding: 5px;
+    background-color: rgb(236, 234, 234);
+    border-bottom-right-radius: 15px;
+    margin: 10px;
+}
+.btn-default {
+    border: 2px solid;
+}
